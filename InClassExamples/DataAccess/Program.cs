@@ -21,6 +21,8 @@ namespace DataAccess
             nums[1] = var2;
             nums[2] = var3;
 
+            result = Add(nums);
+
             Console.ReadKey();
         }
 
@@ -59,7 +61,7 @@ namespace DataAccess
 
             r = 0;
 
-            //Iteratin through an array with a for loop
+            //Iterating through an array with a for loop
             for (counter = 0; counter < numbersToAddUp.Length; counter++)
             {
                 var number = numbersToAddUp[counter];
