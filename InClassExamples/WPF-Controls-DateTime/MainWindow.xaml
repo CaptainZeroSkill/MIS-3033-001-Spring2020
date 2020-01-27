@@ -1,0 +1,30 @@
+﻿<Window x:Class="WPF_Controls_DateTime.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Controls_DateTime"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="My First WPF App" HorizontalAlignment="Left" Margin="188,10,0,0" VerticalAlignment="Top" Height="84" Width="444" FontFamily="Showcard Gothic" FontSize="48">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFF0C0C" Offset="0"/>
+                    <GradientStop Color="#FF302626" Offset="1"/>
+                    <GradientStop Color="#FFA24141" Offset="0.573"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <TextBox x:Name="txtbxFirstName" HorizontalAlignment="Left" Height="23" Margin="100,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtbxLastName" HorizontalAlignment="Left" Height="23" Margin="100,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" MouseEnter="txtbxLastName_MouseEnter"/>
+        <TextBox x:Name="txtbxBirthdate" HorizontalAlignment="Left" Height="23" Margin="100,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblFirstName" Content="First Name" HorizontalAlignment="Left" Margin="20,123,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblLastName" Content="Last Name" HorizontalAlignment="Left" Margin="20,149,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblBirthdate" Content="Birthdate" HorizontalAlignment="Left" Margin="20,182,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Left" Margin="100,252,0,0" VerticalAlignment="Top" Width="120" Height="48" Click="btnSubmit_Click" IsDefault="True"/>
+        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="686,23,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.047,-0.208" Click="btnExit_Click" IsCancel="True"/>
+        <ListBox x:Name="lstLetters" HorizontalAlignment="Left" Height="275" Margin="453,123,0,0" VerticalAlignment="Top" Width="308"/>
+
+    </Grid>
+</Window>

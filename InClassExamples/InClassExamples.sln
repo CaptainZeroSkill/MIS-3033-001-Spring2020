@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{A5FEE182-D17E-4FBD-8450-8420EBF48110}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF-Controls-DateTime", "WPF-Controls-DateTime\WPF-Controls-DateTime.csproj", "{00B785A2-9449-4C42-BD88-032E3783A3AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A5FEE182-D17E-4FBD-8450-8420EBF48110}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5FEE182-D17E-4FBD-8450-8420EBF48110}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5FEE182-D17E-4FBD-8450-8420EBF48110}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00B785A2-9449-4C42-BD88-032E3783A3AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00B785A2-9449-4C42-BD88-032E3783A3AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00B785A2-9449-4C42-BD88-032E3783A3AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00B785A2-9449-4C42-BD88-032E3783A3AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
