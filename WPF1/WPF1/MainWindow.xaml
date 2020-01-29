@@ -24,7 +24,8 @@
         <Label x:Name="lblAddress" Content="Address : " HorizontalAlignment="Left" Margin="26,153,0,0" VerticalAlignment="Top" Height="23" Width="60"/>
         <Label x:Name="lblEntryForm" Content="Entry Form" HorizontalAlignment="Left" Margin="252,10,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="48" Foreground="#FFB21111"/>
         <ListBox x:Name="lstbxEntryForms" HorizontalAlignment="Left" Height="277" Margin="420,110,0,0" VerticalAlignment="Top" Width="350"/>
-        <Label x:Name="lblListOfEntryForms" Content="List of Entry Forms" HorizontalAlignment="Left" Margin="543,79,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblListOfEntryForms" Content="List of Entry Forms" HorizontalAlignment="Left" Margin="528,79,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnClearContents" Content="Clear All" HorizontalAlignment="Left" Margin="528,389,0,0" VerticalAlignment="Top" Width="137" Click="btnClearContents_Click"/>
 
     </Grid>
 </Window>

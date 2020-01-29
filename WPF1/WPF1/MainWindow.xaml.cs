@@ -44,9 +44,15 @@ namespace WPF1
             address = txtbxAddress.Text;
             name = txtbxName.Text;
             zipCode = txtbxZipCode.Text;
+
             EntryForm newEntryForm = new EntryForm(name, address, Convert.ToInt32(zipCode));
             lstbxEntryForms.Items.Add(newEntryForm);
             ClearAllTextBoxes();
+        }
+
+        private void btnClearContents_Click(object sender, RoutedEventArgs e)
+        {
+            lstbxEntryForms.Items.Clear();
         }
     }
 }
