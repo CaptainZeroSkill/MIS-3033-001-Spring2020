@@ -23,6 +23,30 @@ namespace WPF1
         public MainWindow()
         {
             InitializeComponent();
+            ClearAllTextBoxes();
+        }
+
+        private void btnExit_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        public void ClearAllTextBoxes()
+        {
+            txtbxAddress.Clear();
+            txtbxName.Clear();
+            txtbxZipCode.Clear();
+        }
+
+        private void btnSubmit_Click(object sender, RoutedEventArgs e)
+        {
+            string address, name, zipCode;
+            address = txtbxAddress.Text;
+            name = txtbxName.Text;
+            zipCode = txtbxZipCode.Text;
+            EntryForm newEntryForm = new EntryForm(name, address, Convert.ToInt32(zipCode));
+            lstbxEntryForms.Items.Add(newEntryForm);
+            ClearAllTextBoxes();
         }
     }
 }

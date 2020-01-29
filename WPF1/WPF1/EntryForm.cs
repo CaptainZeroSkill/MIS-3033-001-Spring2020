@@ -15,9 +15,9 @@ namespace WPF1
 
         public EntryForm(string name, string address, int zipCode)
         {
-            name = Name;
-            address = Address;
-            zipCode = ZipCode;
+            Name = name;
+            Address = address;
+            ZipCode = zipCode;
         }
 
         public string Name { get; set; }
@@ -25,5 +25,10 @@ namespace WPF1
         public string Address { get; set; }
 
         public int ZipCode { get; set; }
+
+        public override string ToString()
+        {
+            return $"{this.Name} has an address of {this.Address} {this.ZipCode}";
+        }
     }
 }
