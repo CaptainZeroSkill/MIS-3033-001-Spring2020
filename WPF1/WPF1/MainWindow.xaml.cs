@@ -44,6 +44,18 @@ namespace WPF1
             address = txtbxAddress.Text;
             name = txtbxName.Text;
             zipCode = txtbxZipCode.Text;
+            int zipCodeAsInt;
+
+            if (string.IsNullOrWhiteSpace(address) == true)
+            {
+                MessageBox.Show("Address is a required field.");
+            }
+
+            bool isInt = Int32.TryParse(zipCode, out zipCodeAsInt);
+            if (isInt == false)
+            {
+                MessageBox.Show("Must enter an integer value for zip code.");
+            }
 
             EntryForm newEntryForm = new EntryForm(name, address, Convert.ToInt32(zipCode));
             lstbxEntryForms.Items.Add(newEntryForm);
