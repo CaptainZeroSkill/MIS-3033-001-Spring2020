@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF-Controls-DateTime", "WP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF-FilesAndFormattingText", "WPF-FilesAndFormattingText\WPF-FilesAndFormattingText.csproj", "{5A811470-EE7E-4B19-B70E-99149125BE3C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSON-RickAndMorty", "JSON-RickAndMorty\JSON-RickAndMorty.csproj", "{52673CF3-4A4E-478A-B63B-D1CB1B7989CD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{5A811470-EE7E-4B19-B70E-99149125BE3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A811470-EE7E-4B19-B70E-99149125BE3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A811470-EE7E-4B19-B70E-99149125BE3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52673CF3-4A4E-478A-B63B-D1CB1B7989CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52673CF3-4A4E-478A-B63B-D1CB1B7989CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52673CF3-4A4E-478A-B63B-D1CB1B7989CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52673CF3-4A4E-478A-B63B-D1CB1B7989CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
