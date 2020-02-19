@@ -9,19 +9,22 @@ namespace JSON_Pokemon
     class Pokemon
     {
 
-        public InfoObject info { get; set; }
+        public Pokemon info { get; set; }
 
-        public class InfoObject
+        public Pokemon()
         {
+
+        }
+        
             public int weight { get; set; }
 
             public int id { get; set; }
 
             public int height { get; set; }
 
-            public List<Sprite> sprites { get; set; }
+            public Sprite sprites { get; set; }
 
-
+            public string name { get; set; }
         }
 
         public class Sprite
@@ -43,4 +46,3 @@ namespace JSON_Pokemon
             public string url { get; set; }
         }
     }
-}

@@ -10,8 +10,9 @@
         <ListBox x:Name="lstbxPokemon" HorizontalAlignment="Left" Height="240" Margin="49,89,0,0" VerticalAlignment="Top" Width="336"/>
         <Label x:Name="lblPokemon" Content="Pokemon Selector" HorizontalAlignment="Left" Margin="162,5,0,0" VerticalAlignment="Top" FontFamily="Showcard Gothic" FontSize="48" Foreground="#FFFFCB1A" BorderBrush="#FF0813FB" BorderThickness="5"/>
         <Image x:Name="imgPokemon" HorizontalAlignment="Left" Height="175" Margin="434,122,0,0" VerticalAlignment="Top" Width="163"/>
-        <Button x:Name="btnMoreInfo" Content="Get More Info!" HorizontalAlignment="Left" Margin="138,345,0,0" VerticalAlignment="Top" Width="128" Height="52" Click="btnMoreInfo_Click"/>
+        <Button x:Name="btnMoreInfo" Content="Get Default Sprite!" HorizontalAlignment="Left" Margin="49,345,0,0" VerticalAlignment="Top" Width="128" Height="52" Click="btnMoreInfo_Click"/>
         <ListBox HorizontalAlignment="Left" Height="178" Margin="648,122,0,0" VerticalAlignment="Top" Width="131"/>
+        <Button x:Name="btnShiny" Content="See the shiny sprite!" HorizontalAlignment="Left" Margin="259,345,0,0" VerticalAlignment="Top" Width="126" Height="52" Click="btnShiny_Click"/>
 
     </Grid>
 </Window>

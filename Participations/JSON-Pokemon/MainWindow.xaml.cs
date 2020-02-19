@@ -26,12 +26,13 @@ namespace JSON_Pokemon
         public MainWindow()
         {
             InitializeComponent();
-            txtbxPokemonInfo.Clear();
+            //txtbxPokemonInfo.Clear();
 
             string dataSetURL = "https://pokeapi.co/api/v2/pokemon?offset=0&limit=1000";
 
             PokemonAPI pokemonAPI;
 
+            //httpclient allows use of things on the internet
             using (var client = new HttpClient())
             {
                 string json = client.GetStringAsync(dataSetURL).Result;
@@ -39,25 +40,45 @@ namespace JSON_Pokemon
                 pokemonAPI = JsonConvert.DeserializeObject<PokemonAPI>(json);
             }
 
-            foreach (var name in pokemonAPI.results)
+            foreach (var pokemon in pokemonAPI.results)
             {
-                lstbxPokemon.Items.Add(name);
+                lstbxPokemon.Items.Add(pokemon);
             }
 
         }
 
         private void btnMoreInfo_Click(object sender, RoutedEventArgs e)
         {
+            //Communicating with the list box through this command in order to see what the selected item is
+            //Use casting to identify the object as a ResultObject object
             var selectedCharacterFromList = (ResultObject)lstbxPokemon.SelectedItem;
             string pokemonURL = selectedCharacterFromList.url;
-            PokemonAPI pokemonAPI;
+            Pokemon pokemon;
 
             using (var client = new HttpClient())
             {
                 string json = client.GetStringAsync(pokemonURL).Result;
 
-                pokemonAPI = JsonConvert.DeserializeObject<PokemonAPI>(json);
+                pokemon = JsonConvert.DeserializeObject<Pokemon>(json);
             }
+
+            imgPokemon.Source = new BitmapImage(new Uri(pokemon.sprites.front_default));
+        }
+
+        private void btnShiny_Click(object sender, RoutedEventArgs e)
+        {
+            var selectedCharacterFromList = (ResultObject)lstbxPokemon.SelectedItem;
+            string pokemonURL = selectedCharacterFromList.url;
+            Pokemon pokemon;
+
+            using (var client = new HttpClient())
+            {
+                string json = client.GetStringAsync(pokemonURL).Result;
+
+                pokemon = JsonConvert.DeserializeObject<Pokemon>(json);
+            }
+
+            imgPokemon.Source = new BitmapImage(new Uri(pokemon.sprites.front_shiny));
         }
     }
 }
