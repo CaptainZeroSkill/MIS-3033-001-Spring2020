@@ -1,0 +1,31 @@
+﻿<!--The "at" symbol allows you to embed C# code into your HTML code allowing to program within HTML page-->
+@model Henson_Employee.Models.Employee
+
+@{
+    ViewBag.Title = "Employee";
+}
+
+<h2>Index</h2>
+
+<div>
+    <h4>Employee</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreationDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreationDate)
+        </dd>
+
+    </dl>
+</div>

@@ -1,11 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.2050
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSON-Pokemon", "JSON-Pokemon\JSON-Pokemon.csproj", "{AA5A9C03-A55E-4AAE-B970-EB100F109D0A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSON-GOTQuotes", "JSON-GOTQuotes\JSON-GOTQuotes.csproj", "{FF2225CA-BA04-410E-AC42-3C9B1C0C765D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0A20ACDB-325A-4FB0-8315-1431EA0D4123}"
+	ProjectSection(SolutionItems) = preProject
+		HTMLPage1.html = HTMLPage1.html
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Henson_Employee", "Henson_Employee\Henson_Employee.csproj", "{BC6EE8AB-2C5E-4366-8111-52015F299929}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +28,10 @@ Global
 		{FF2225CA-BA04-410E-AC42-3C9B1C0C765D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF2225CA-BA04-410E-AC42-3C9B1C0C765D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF2225CA-BA04-410E-AC42-3C9B1C0C765D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC6EE8AB-2C5E-4366-8111-52015F299929}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC6EE8AB-2C5E-4366-8111-52015F299929}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC6EE8AB-2C5E-4366-8111-52015F299929}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC6EE8AB-2C5E-4366-8111-52015F299929}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
