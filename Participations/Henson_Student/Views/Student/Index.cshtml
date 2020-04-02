@@ -4,7 +4,7 @@
     ViewBag.Title = "Index";
 }
     <link rel="stylesheet" href="StyleSheet1.css">
-<h2>Index</h2>
+<h2>All Student Info</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -27,22 +27,25 @@
     </tr>
 
 @foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.FirstName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.LastName)
-        </td>
-        <td style="background-color: @Html.DisplayNameFor(model => model.FavoriteColor)">
-            @Html.DisplayFor(modelItem => item.FavoriteColor)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.StudentID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.StudentID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.StudentID })
-        </td>
-    </tr>
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.StudentID)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.FirstName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.LastName)
+    </td>
+    <td style="background-color: @Html.DisplayNameFor(model => model.FavoriteColor)">
+        @Html.DisplayFor(modelItem => item.FavoriteColor)
+    </td>
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { id = item.StudentID }) |
+        @Html.ActionLink("Details", "Details", new { id = item.StudentID }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.StudentID })
+    </td>
+</tr>
 }
 
 </table>
