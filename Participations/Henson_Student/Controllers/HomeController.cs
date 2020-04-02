@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Henson_Student.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -23,6 +24,13 @@ namespace Henson_Student.Controllers
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+
+        public ActionResult Student()
+        {
+            ViewBag.Message = "Student Info";
 
             return View();
         }

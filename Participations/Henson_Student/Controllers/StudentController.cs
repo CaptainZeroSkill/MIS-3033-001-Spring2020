@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Henson_Student.Models;
 
 namespace Henson_Student.Controllers
 {
@@ -11,7 +12,23 @@ namespace Henson_Student.Controllers
         // GET: Student
         public ActionResult Index()
         {
-            return View();
+            Student student = new Student();
+            student.FirstName = "Braden";
+            student.LastName = "Henson";
+            student.StudentID = 113442125;
+            student.FavoriteColor = "Purple";
+
+            Student student2 = new Student();
+            student2.FirstName = "John";
+            student2.LastName = "Doe";
+            student2.StudentID = 11111111;
+            student2.FavoriteColor = "Blue";
+
+            List<Student> students = new List<Student>();
+            students.Add(student);
+            students.Add(student2);
+
+            return View(students);
         }
 
         // GET: Student/Details/5
