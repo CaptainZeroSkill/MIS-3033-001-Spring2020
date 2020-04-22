@@ -26,5 +26,26 @@ namespace EF_Participation.Controllers
 
             return View();
         }
+
+        public ActionResult Courses()
+        {
+            ViewBag.Message = "List of courses.";
+
+            return View();
+        }
+
+        public ActionResult Regisration()
+        {
+            ViewBag.Message = "Registration.";
+
+            return View();
+        }
+
+        public ActionResult Students()
+        {
+            ViewBag.Message = "List of students.";
+
+            return View();
+        }
     }
 }

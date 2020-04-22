@@ -1,0 +1,41 @@
+﻿@model IEnumerable<EF_Participation.Models.Student>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Students</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+
+
+@foreach (var item in Model)
+{
+
+<div style="max-width: 18rem; display:inline-block; float:left; padding:10px; background-color: lightblue; border: 5px solid red; margin: 10px;">
+    <div class="card-header" style="text-decoration:underline;">Student Info</div>
+    <div class="card-body text-dark">
+        <p class="card-text"> @Html.DisplayFor(modelItem => item.LastName), @Html.DisplayFor(modelItem => item.FirstName)</p>
+        <p class="card-text"> @Html.DisplayFor(modelItem => item.FavoriteColor)</p>
+        <p>@Html.ActionLink("Details", "Details", new { id = item.StudentID })</p>
+    </div>
+</div>
+
+
+    /*
+    @Html.ActionLink("Edit", "Edit", new { id = item.StudentID }) |
+    @Html.ActionLink("Details", "Details", new { id = item.StudentID }) |
+    @Html.ActionLink("Delete", "Delete", new { id = item.StudentID })
+    */
+
+}
+
+<br />
+<div class="row"></div>
+
+
+
+
